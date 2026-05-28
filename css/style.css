@@ -43,6 +43,12 @@ body.home-page {
     font-size: 16px;
 }
 
+@media (max-width: 900px) {
+    body.home-page {
+        --page-zoom: 1.2;
+    }
+}
+
 body.home-page * {
     margin: 0;
     padding: 0;
@@ -582,9 +588,17 @@ body.arch-page .footer {
 }
 
 @media (max-width: 600px) {
+    body.home-page {
+        --page-zoom: 1;
+        align-items: flex-start;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
     body.home-page .container {
         width: 95%;
         max-width: 95%;
+        transform-origin: top center;
     }
 
     body.home-page .header h1 {
@@ -601,6 +615,7 @@ body.arch-page .footer {
 
     body.home-page .status-section {
         align-items: flex-start;
+        gap: 10px;
     }
 
     body.home-page .status-name,
@@ -608,5 +623,21 @@ body.arch-page .footer {
     body.home-page .activity-name,
     body.home-page .activity-details {
         white-space: normal;
+    }
+
+    body.arch-page {
+        padding: 14px 10px 20px;
+    }
+
+    body.arch-page .topbar {
+        justify-content: flex-start;
+    }
+
+    body.arch-page .section {
+        padding: 14px;
+    }
+
+    body.arch-page pre {
+        padding-right: 11px;
     }
 }
