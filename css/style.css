@@ -7,7 +7,7 @@ body {
     margin: 0;
     height: 100%;
     background: transparent;
-    color: #c7c7c7;
+    color: #e3e2e2;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -71,8 +71,8 @@ body.home-page .container {
 }
 
 body.home-page .card {
-    background: #2a2a2a;
-    border: 2px solid #404040;
+    background: #1e2020;
+    border: 1px solid #717373;
     padding: 12px;
     margin-bottom: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -585,6 +585,56 @@ body.arch-page .footer {
     text-align: center;
     color: var(--text-muted);
     font-size: 0.9rem;
+}
+
+body.arch-page .gear-card {
+    background: var(--card);
+    border: 2px solid var(--border);
+    padding: 18px;
+    margin-bottom: 14px;
+}
+
+body.arch-page .about-content section {
+    margin-bottom: 20px;
+}
+
+body.arch-page .gear-category {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    color: var(--text-strong);
+    cursor: pointer;
+    user-select: none;
+}
+
+body.arch-page .gear-category:hover {
+    color: var(--accent);
+}
+
+body.arch-page .collapse-icon {
+    display: inline-block;
+    width: 14px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+body.arch-page .about-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body.arch-page .about-content li {
+    padding: 3px 0;
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+body.arch-page .gear-date {
+    margin-top: 6px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
 }
 
 @media (max-width: 600px) {
