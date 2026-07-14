@@ -5,48 +5,56 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="The entire Arch tutorial" />
-	<meta name="theme-color" content="#0f0f0f" />
+	<meta name="theme-color" content="#1a1a1a" />
 	<title>arch loonix</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="icon" href="/img/teto.png" type="image/png" />
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;800&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="/css/style.css" />
 </head>
 
-<body class="arch-page">
+<body class="home-page">
 	<video class="bg-video" autoplay muted loop playsinline>
 		<source src="/media/withyou.webm" type="video/webm">
 	</video>
 	<div class="frosted-overlay"></div>
 
-	<main class="shell">
-		<div class="topbar">
-			<a class="back-link" href="/">go back home</a>
+	<div class="container">
+		<div class="card">
+			<div style="display: flex; justify-content: space-between; align-items: center;">
+				<div class="section-title" style="margin-bottom: 0;">arch tutorial</div>
+				<a href="/" style="color: #8fb3ff; text-decoration: none; font-size: 12px;">go back home</a>
+			</div>
 		</div>
 
-		<section class="section">
-			<h1>arch tutorial</h1>
-			<p class="subtitle">you asked for a full guide. here it is.</p>
-
-			<div class="block-warning" style="margin-top: 16px; text-align: center;">
+		<div class="card">
+			<div class="about-section">
+				<p>you asked for a full guide. here it is.</p>
+			</div>
+			<div style="text-align: center;">
 				<p style="font-size: clamp(2.1rem, 12vw, 6rem); line-height: 1; margin: 0; font-weight: 800; letter-spacing: 0.06em;">RTFM</p>
-				<p style="margin-top: 10px; color: var(--text-muted);">(read the fine manual, the friendly manual, the arch wiki, all of it)</p>
+				<p style="margin-top: 10px; color: #888;">(read the fine manual, the friendly manual, the arch wiki, all of it)</p>
 			</div>
 
-			<ol style="margin-top: 14px;">
-				<li>open the <a href="https://wiki.archlinux.org/" target="_blank" rel="noopener">Arch Wiki</a>.</li>
-				<li>read what applies to your hardware.</li>
-				<li>do exactly that.</li>
-				<li>if broken, return to step 1 with more humility.</li>
-			</ol>
+			<div class="about-section" style="margin-top: 16px;">
+				<ol style="padding-left: 20px;">
+					<li>open the <a href="https://wiki.archlinux.org/" target="_blank" rel="noopener">Arch Wiki</a>.</li>
+					<li>read what applies to your hardware.</li>
+					<li>do exactly that.</li>
+					<li>if broken, return to step 1 with more humility.</li>
+				</ol>
+			</div>
 
-			<div class="block-tip">
+			<div class="about-section" style="margin-top: 14px; padding: 10px; background: #232323; border-left: 4px solid #3d905a;">
 				bonus: <a href="https://wiki.archlinux.org/title/Installation_guide" target="_blank" rel="noopener">Installation guide</a> and <a href="https://wiki.archlinux.org/title/General_recommendations" target="_blank" rel="noopener">General recommendations</a>.
 			</div>
-		</section>
 
-		<p class="footer">this tutorial is complete and technically correct.</p>
-	</main>
+			<div style="margin-top: 14px; text-align: center; color: #888; font-size: 12px;">
+				this tutorial is complete and technically correct.
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

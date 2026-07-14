@@ -5,38 +5,44 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="the gear i use so people stop asking" />
-	<meta name="theme-color" content="#0f0f0f" />
+	<meta name="theme-color" content="#1a1a1a" />
 	<title>gear</title>
 	<link rel="icon" href="/img/teto.png" type="image/png" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;800&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="/css/style.css" />
 </head>
 
-<body class="arch-page">
+<body class="home-page">
 	<video class="bg-video" autoplay muted loop playsinline>
 		<source src="/media/withyou.webm" type="video/webm">
 	</video>
 	<div class="frosted-overlay"></div>
 
-	<main class="shell">
-		<div class="topbar">
-			<a class="back-link" href="/">go back home</a>
+	<div class="container">
+		<div class="card">
+			<div style="display: flex; justify-content: space-between; align-items: center;">
+				<div class="section-title" style="margin-bottom: 0;">gear</div>
+				<a href="/" style="color: #8fb3ff; text-decoration: none; font-size: 12px;">go back home</a>
+			</div>
 		</div>
 
-		<article class="about-content gear-card">
-			<section>
-				<h3>computers</h3>
-				<ul id="section-computers">
+		<div class="card">
+			<div class="section-title">computers</div>
+			<div class="about-section">
+				<ul style="list-style: none; padding: 0;">
 					<li>- macbook pro m4 pro (20c), 24gb, 1tb</li>
 					<li>- desktop ryzen 7 9700x, rx 7800 xt + rx 6600 (arch + virtualized windows w/ gpu passthrough)</li>
 					<li>- steam machine whenever i get the fucking chance to buy it...</li>
 				</ul>
-			</section>
-			<section>
-				<h3>peripherals</h3>
-				<ul id="section-peripherals">
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="section-title">peripherals</div>
+			<div class="about-section">
+				<ul style="list-style: none; padding: 0;">
 					<li>- lg ultragear 27gs95qe-b</li>
 					<li>- keychron v2 (red switches)</li>
 					<li>- logitech g pro x superlight 2</li>
@@ -45,28 +51,21 @@
 					<li>- apple earpods (usb c)</li>
 					<li>- maybe a thunderbolt dock soon?</li>
 				</ul>
-			</section>
-			<section>
-				<h3>phones and other</h3>
-				<ul id="section-other">
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="section-title">phones and other</div>
+			<div class="about-section">
+				<ul style="list-style: none; padding: 0;">
 					<li>- iphone 17 256gb</li>
 					<li>- samsung galaxy s21+ 128gb</li>
 					<li>- airpods pro 2 (usb c)</li>
 					<li>- lots of gaming consoles i collected over the years; notably a phat ps2 purchased in 2001 by my father that is still in perfect condition</li>
 				</ul>
-			</section>
-		</article>
-	</main>
-
-	<script>
-		const sections = { computers: true, peripherals: true, other: true };
-
-		function toggle(name) {
-			sections[name] = !sections[name];
-			document.getElementById('section-' + name).style.display = sections[name] ? '' : 'none';
-			document.getElementById('icon-' + name).textContent = sections[name] ? '−' : '+';
-		}
-	</script>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

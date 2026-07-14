@@ -20,9 +20,9 @@
     <meta name="twitter:description" content="What the hap is fuckening :buhhh:" />
 
     <link rel="icon" href="/img/teto.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="/css/style.css" />
     <title>sen.rip</title>
 </head>
@@ -49,9 +49,9 @@
             <div class="about-section">
                 <p>i am a software & cloud engineering student from the Netherlands. in my free time I make things like <a href="https://github.com/sifsen/cro">Cro</a> and <a href="https://github.com/sifsen/Common">Common</a>.</p>
                 <br>
-                <p>aside from that I play games like FFXIV (Chaos/Spriggan), racing games, story games. I also really like to cook. Maybe I will upload recipes on this website sometime...</p>
+                <p>aside from that I play games like FFXIV (Chaos/Spriggan), <a href="https://nfsco.club">nfs carbon online</a>, story games. I also really like to cook. maybe I will upload recipes on this website sometime...</p>
                 <br>
-                <p>some of my favorite media consists of Neon Genesis Evangelion, Supernatural and Violet Evergarden.</p>
+                <p>some of my favorite media consists of Neon Genesis Evangelion, Supernatural and Violet Evergarden. as for music, i have <a href="https://open.spotify.com/user/dnn125snvm92c1w3xvkuat73q">playlists</a> on my spotify of what i listen to the most on a monthly basis</p>
                 <br>
                 <p>you can contact me on <a href="https://discord.com/users/374589381752913930">Discord</a>, or send me an <a href="mailto:hello@sen.rip">email</a>!</p>
                 <br>
@@ -130,7 +130,7 @@
                 const activities = presence.activities.filter(a => a.type !== 4 && a.type !== 2);
                 if (activities.length > 0) {
                     activities.forEach(activity => {
-                        const activityType = ['Playing', 'Streaming', 'Listening to', 'Watching', 'Custom', 'Competing in'][activity.type] || 'Playing';
+                        const activityType = ['playing', 'streaming', 'listening to', 'watching', 'custom', 'competing in'][activity.type] || 'playing';
                         activityHtml += `<div class="status-detail">${activityType}: ${activity.name}</div>`;
                     });
                 }

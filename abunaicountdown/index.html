@@ -7,9 +7,9 @@
     <meta name="description" content="ABU COUNTDOWNNN" />
     <meta name="theme-color" content="#000000" />
     <title>abunai countdown</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" /> -->
     <link rel="stylesheet" href="/css/style.css" />
     <style>
         body.home-page .countdown-head {
@@ -92,8 +92,15 @@
 
     <main class="container" aria-live="polite">
         <section class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="section-title" style="margin-bottom: 0;">abunai</div>
+                <a href="/" style="color: #8fb3ff; text-decoration: none; font-size: 12px;">go back home</a>
+            </div>
+        </section>
+
+        <section class="card">
             <div class="countdown-head">
-                <h1>abunai</h1>
+                <h1>ABUNAI COUNTDOWN</h1>
                 <p id="targetDate">loading date...</p>
             </div>
 
@@ -117,9 +124,6 @@
             </div>
 
             <p class="countdown-status" id="statusText">counting down...</p>
-            <div class="back-row">
-                <a class="link" href="/">back home</a>
-            </div>
         </section>
     </main>
 

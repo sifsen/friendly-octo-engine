@@ -8,7 +8,8 @@ body {
     height: 100%;
     background: transparent;
     color: #e3e2e2;
-    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .bg-video {
@@ -537,7 +538,8 @@ body.arch-page .copy-code-btn {
     border: 1px solid var(--border);
     background: #232323;
     color: var(--text);
-    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 12px;
     line-height: 1;
     padding: 7px 9px;
